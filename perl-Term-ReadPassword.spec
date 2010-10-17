@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Asking the user for a password
 License:    GPL+ or Artistic
@@ -35,8 +35,9 @@ doesn't include the newline character, so there's no need to use *chomp*.
 
 %make
 
-%check
-%make test
+# Commenting-out because it's interactive.
+# %check
+# %make test
 
 %install
 rm -rf %buildroot
