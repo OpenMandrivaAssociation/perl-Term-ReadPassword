@@ -2,14 +2,14 @@
 %define upstream_version 0.11
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	6
+Version:	%{upstream_version}
+Release:	7
 
 Summary:	Asking the user for a password
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Term/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/Term-ReadPassword
+Source0:	https://cpan.metacpan.org/authors/id/P/PH/PHOENIX/Term-ReadPassword-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
