@@ -1,15 +1,13 @@
 %define upstream_name    Term-ReadPassword
-%define upstream_version 0.11
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	7
+Version:	0.11
+Release:	8
 
 Summary:	Asking the user for a password
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Term-ReadPassword
-Source0:	https://cpan.metacpan.org/authors/id/P/PH/PHOENIX/Term-ReadPassword-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/P/PH/PHOENIX/Term-ReadPassword-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -28,7 +26,7 @@ the keyboard, then returns that line to the caller. The line of text
 doesn't include the newline character, so there's no need to use *chomp*.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
