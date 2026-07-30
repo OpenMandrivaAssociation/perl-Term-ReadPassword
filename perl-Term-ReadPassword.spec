@@ -1,13 +1,14 @@
 %define upstream_name    Term-ReadPassword
+%define upstream_version 0.11
 Name:		perl-%{upstream_name}
 Version:	0.11
-Release:	8
+Release:	1
 
 Summary:	Asking the user for a password
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Term-ReadPassword
-Source0:	https://cpan.metacpan.org/authors/id/P/PH/PHOENIX/Term-ReadPassword-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/P/PH/PHOENIX/Term-ReadPassword-0.11.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -44,14 +45,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
 
-
-%changelog
-* Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 0.110.0-3mdv2011.0
-+ Revision: 657839
-- rebuild for updated spec-helper
-
-* Sun Oct 17 2010 Shlomi Fish <shlomif@mandriva.org> 0.110.0-2mdv2011.0
-+ Revision: 586543
-- Disabled make test because it's interactive
-- import perl-Term-ReadPassword
 
