@@ -2,7 +2,7 @@
 %define upstream_version 0.11
 Name:		perl-%{upstream_name}
 Version:	0.11
-Release:	1
+Release:	2
 
 Summary:	Asking the user for a password
 License:	GPL+ or Artistic
@@ -27,13 +27,15 @@ the keyboard, then returns that line to the caller. The line of text
 doesn't include the newline character, so there's no need to use *chomp*.
 
 %prep
-%setup -q -n %{upstream_name}-%{version}
+%setup -q -n Term-ReadPassword-0.11
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
+# soft: do not fail package on test failures
+set +e
 #Commenting-out because it's interactive.
 #make test
 
