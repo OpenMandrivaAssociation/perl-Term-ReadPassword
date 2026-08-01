@@ -2,7 +2,7 @@
 %define upstream_version 0.11
 Name:		perl-%{upstream_name}
 Version:	0.11
-Release:	3
+Release:	4
 
 Summary:	Asking the user for a password
 License:	GPL+ or Artistic
